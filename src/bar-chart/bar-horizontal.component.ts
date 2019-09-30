@@ -268,9 +268,13 @@ export class BarHorizontalComponent extends BaseChartComponent {
       }
     });
 
-    const idx = item ? this.activeEntries.findIndex(d => {
+    if (!item) {
+      return;
+    }
+
+    const idx = this.activeEntries.findIndex(d => {
       return d.name === item.name && d.value === item.value && d.series === item.series;
-    }) : -1;
+    });
 
     if (idx > -1) {
       return;

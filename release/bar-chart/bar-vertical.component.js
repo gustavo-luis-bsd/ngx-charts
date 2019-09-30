@@ -177,6 +177,9 @@ var BarVerticalComponent = /** @class */ (function (_super) {
                 return d.name === item.name;
             }
         });
+        if (!item) {
+            return;
+        }
         var idx = this.activeEntries.findIndex(function (d) {
             return d.name === item.name && d.value === item.value && d.series === item.series;
         });
