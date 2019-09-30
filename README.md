@@ -51,7 +51,7 @@ For more info, check out the [documentation](https://swimlane.gitbook.io/ngx-cha
 To use ngx-charts in your project install it via [npm](https://www.npmjs.com/package/@swimlane/ngx-charts):
 
 ```
-npm i @swimlane/ngx-charts --save
+npm i @chnxo/ngx-charts --save
 ```
 
 ## Custom Charts
